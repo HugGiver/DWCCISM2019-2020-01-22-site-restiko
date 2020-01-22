@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Restiko - AM</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Page Header -->
+  <header id="homeHeader" class="masthead" style="background-image: url('img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Espace Restiko</h1>
+            <span class="subheading">Bienvenue sur le blog de Matarii Apeang</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="postPreviewContainer" class="col-lg-8 col-md-10 mx-auto">
+      </div>
+      <div id="postViewContainer" class="col-lg-8 col-md-10 mx-auto">
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Bouton d'ajout de Restiko -->
+  <button id="createRestikoButton" class="btn" type="button" data-toggle="modal" data-target="#createRestikoModal">+</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="createRestikoModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Créer un nouveau restiko</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <label for="dateCreate" class="font-weight-bold">Date :</label>
+          <input id="dateCreate" type="date">
+
+          <label class="mt-3 font-weight-bold" for="whatIDidCreate">Ce que j'ai fait :</label>
+          <textarea name="whatIDidCreate" id="whatIDidCreate" cols="40" rows="5"></textarea>
+
+          <label class="mt-3 font-weight-bold" for="whatIlearnedCreate">Ce que j'ai appris :</label>
+          <textarea name="whatIlearnedCreate" id="whatIlearnedCreate" cols="40" rows="5"></textarea>
+
+          <label class="mt-3 font-weight-bold" for="whatIlikedCreate">Ce que j'ai aimé :</label>
+          <textarea name="whatIlikedCreate" id="whatIlikedCreate" cols="40" rows="3"></textarea>
+
+          <label class="mt-3 font-weight-bold" for="whatNewIUsedCreate">Ce que j'ai utilisé de nouveaux :</label>
+          <textarea name="whatNewIUsedCreate" id="whatNewIUsedCreate" cols="40" rows="3"></textarea>
+
+          <label class="mt-3 font-weight-bold" for="problematiqueCreate">Problématiques  rencontrées :</label>
+          <textarea name="problematiqueCreate" id="problematiqueCreate" cols="40" rows="3"></textarea>
+
+          <label class="mt-3 font-weight-bold" for="objectivesCreate">Quels sont les objectifs ? :</label>
+          <textarea name="objectivesCreate" id="objectivesCreate" cols="40" rows="3"></textarea>
+
+          <label class="mt-3 font-weight-bold" for="whatILackedCreate">Qu'est-ce qui m'a manqué ? :</label>
+          <textarea name="whatILackedCreate" id="whatILackedCreate" cols="40" rows="3"></textarea>
+
+          <label class="mt-3 font-weight-bold" for="whatWouldIDoCreate">Qu'est-ce que tu ferais à la place du formateur ?:</label>
+          <textarea name="whatWouldIDoCreate" id="whatWouldIDoCreate" cols="40" rows="3"></textarea>
+
+          <label class="mt-3 font-weight-bold" for="resultsCreate">Objectifs atteints ou pas ? :</label>
+          <textarea name="resultsCreate" id="resultsCreate" cols="40" rows="3"></textarea>
+
+          <label for="markCreate" class="mt-3 font-weight-bold">Note sur 5 :</label>
+          <input id="markCreate" type="text">
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" onclick="clearChamps()">Annuler</button>
+          <button type="button" class="btn btn-outline-primary" onclick="createRestiko()" data-dismiss="modal">Créer restiko</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pagination-container"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Apeang Matarii 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+  <script src="js/jquery.simplePagination.js"></script>
+  <script src="js/airtable.browser.js"></script>
+  <script src="js/airtable-config.js"></script>
+  <script src="js/main-script.js"></script>
+
+</body>
+
+</html>

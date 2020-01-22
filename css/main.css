@@ -1,0 +1,69 @@
+.fontSizeBigger {
+    font-size: 1.3em;
+}
+
+input {
+    width: 100%;
+}
+
+#createRestikoButton {
+    background-color: #17a2b8;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 28px;
+        font-weight: bold;
+        padding: 7px 20px;
+        text-decoration: none;
+        text-shadow: 0px 0px 3px #00000050;
+        text-decoration: none !important;
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        z-index: 99;
+}
+
+#createRestikoButton:hover {
+    background-color: #ffffff;
+    color: #17a2b8;
+    border: solid 1px #17a2b8;
+}
+
+/* Pagination */
+
+.simple-pagination ul {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.simple-pagination li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+    color: #666;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #EEE;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px 0px #EEE;
+}
+
+.simple-pagination .current {
+    color: #FFF;
+    background-color: #17a2b8;
+    border-color:  #17a2b8;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+    background: #17a2b8;
+}
+
+/* Fin pagination */
